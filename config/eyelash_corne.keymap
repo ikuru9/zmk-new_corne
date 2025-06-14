@@ -130,10 +130,19 @@
         compatible = "zmk,combos";
 
         cut {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LC(X)>;
             key-positions = <29 30>;
             layers = <0>;
-            slow-release;
+        };
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <31 32>;
+            layers = <0>;
         };
     };
 
