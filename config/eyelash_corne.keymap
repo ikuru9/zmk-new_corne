@@ -84,6 +84,17 @@
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>, <&kp LC(LS(Z))>;
         };
+
+        as: auto_shift {
+            compatible = "zmk,behavior-hold-tap";
+            label = "auto shift behavior";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <135>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <0>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -106,10 +117,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&hml GRAVE ESC       &kp Q  &kp W  &kp E      &kp R         &kp T                               &kp UP                &kp Y        &kp U          &kp I         &kp O    &kp P     &kp MINUS
-&td_undo_redo        &kp A  &kp S  &kp D      &kp F         &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J          &kp K         &kp L    &kp SEMI  &kp SQT
-&hml LEFT_SHIFT TAB  &kp Z  &kp X  &kp C      &kp V         &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M          &kp COMMA     &kp DOT  &kp FSLH  &kp F19
-                                   &kp LCTRL  &kp LEFT_GUI  &lt 1 SPACE                                               &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_ALT
+&hml GRAVE ESC       &kp Q  &kp W  &kp E         &kp R      &kp T                               &kp UP                &kp Y        &kp U          &kp I         &kp O    &kp P     &kp MINUS
+&td_undo_redo        &kp A  &kp S  &kp D         &kp F      &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J          &kp K         &kp L    &kp SEMI  &kp SQT
+&hml LEFT_SHIFT TAB  &kp Z  &kp X  &kp C         &kp V      &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M          &kp COMMA     &kp DOT  &kp FSLH  &kp F19
+                                   &kp LEFT_ALT  &kp LCTRL  &lt 1 SPACE                                               &lt 2 ENTER  &kp BACKSPACE  &kp LEFT_GUI
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
