@@ -83,6 +83,7 @@
             label = "UNDO/REDO";
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>, <&kp LC(LS(Z))>;
+            display-name = "UNDO/REDO"
         };
     };
 
