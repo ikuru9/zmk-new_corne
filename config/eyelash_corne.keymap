@@ -111,6 +111,7 @@
 
     macros {
         // Auto shift
+
         shifted: macro_shifted_kp {
             #binding-cells = <1>;
             label = "MACRO_SHIFTED_KP";
@@ -125,17 +126,16 @@
         };
     };
 
-
     combos {
         compatible = "zmk,combos";
 
         cut {
             bindings = <&kp LC(C)>;
             key-positions = <29 30>;
-            layers = <default_layer>;
+            layers = <0>;
+            slow-release;
         };
     };
-
 
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
