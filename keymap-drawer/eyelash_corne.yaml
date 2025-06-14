@@ -51,7 +51,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   NUMBER:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', h: Sft+1, s: '!'}
+  - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
