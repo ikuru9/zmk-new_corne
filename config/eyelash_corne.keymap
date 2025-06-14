@@ -124,16 +124,6 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        cut {
-            bindings = <&kp LC(C)>;
-            key-positions = <29 30>;
-            layers = <0>;
-        };
-    };
-
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
