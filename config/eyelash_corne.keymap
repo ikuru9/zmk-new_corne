@@ -130,7 +130,7 @@
         cut {
             bindings = <&kp LC(C)>;
             key-positions = <29 30>;
-            layers = <0>
+            layers = <0>;
         };
     };
 
